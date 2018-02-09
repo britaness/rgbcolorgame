@@ -1,0 +1,138 @@
+body {
+  background-color: #232323;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+}
+
+.square {
+  width: 30%;
+  background: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 50%;
+  transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+}
+
+.square:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+#guessedRight {
+  color: grey;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+#controlBar {
+  background-color: #F5F5F5;
+  line-height: 35px;
+  text-align: center;
+}
+
+#controlBarContainer {
+  box-shadow: 0px -9px 35px 0px rgba(0,0,0,0.15);
+}
+
+#header {
+  background-color: #262626;
+  margin-top: 0;
+  padding: 10px;
+  transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+}
+
+.smallerHeading {
+  size: 1.3em;
+  font-weight: normal;
+}
+
+#colorDisplay {
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#playAgain {
+  width: 100px;
+  /*border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;*/
+  cursor: pointer;
+  background-color: blue;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s;
+}
+
+#playAgain:hover {
+  background-color: rgba(0, 0, 255, 0.85);
+  color: white;
+}
+
+#playAgain:active {
+  box-shadow: inset 0px 0px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s;
+}
+
+
+#hard {
+  color: white;
+  background-color: red;
+  width: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+
+#easy {
+  color: rgba(255,255,255,0.7);
+  background-color: green;
+  width: 100px;
+  box-shadow: inset 0px 0px 20px rgba(0,0,0,0.4);
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#tabBar {
+  background-color: red;
+  height: 7px;
+  transition: all 0.3s;
+  z-index: 100000;
+}
+
+.h {
+  background-color: #232323;
+}
+
+
+.barItem {
+  display: inline-block;
+  padding: 1% 5%;
+}
+
+#guessedRight.barItem {
+  width: 200px;
+  text-align: center;
+}
